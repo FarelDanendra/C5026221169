@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="utscss" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Biodata Farel Danendra</title>
 </head>
 
@@ -467,11 +467,6 @@
     <a href="materi3" target="_blank"> Materi 3 </a>
     <a href="materi4" target="_blank"> Materi 4 </a>
     <a href="materi5" target="_blank"> Materi 5 </a>
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
