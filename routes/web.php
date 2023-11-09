@@ -48,3 +48,6 @@ Route::get('materi4', function(){
 Route::get('materi5', function(){
     return view('materi5');
     });
+
+Route::get('perkalian', 'App\Http\Controllers\MahasiswaController@index');
+Route::get('biodata', 'App\Http\Controllers\MahasiswaController@biodata');
