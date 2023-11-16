@@ -49,5 +49,28 @@ Route::get('materi5', function(){
     return view('materi5');
     });
 
+Route::get('blog1', function(){
+    return view('blog');
+    });
+
+Route::get('/blog', function(){
+    return view('home');
+    });
+
+Route::get('/blog/tentang', function(){
+    return view('tentang');
+    });
+Route::get('/blog/kontak', function(){
+    return view('kontak');
+    });
+
 Route::get('perkalian', 'App\Http\Controllers\MahasiswaController@index');
+
 Route::get('biodata', 'App\Http\Controllers\MahasiswaController@biodata');
+
+Route::get('showjam/{jam}', 'App\Http\Controllers\MahasiswaController@showtime');
+
+Route::post('/formulir/proses', 'App\Http\Controllers\MahasiswaController@proses');
+
+Route::get('formulir', 'App\Http\Controllers\MahasiswaController@formulir');
+
