@@ -84,3 +84,16 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
+
+//Route Nilai Kuliah
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambah','App\Http\Controllers\NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+//Route Harddisk
+Route::get('/harddisk','App\Http\Controllers\harddiskController@index');
+Route::get('/harddisk/tambah','App\Http\Controllers\harddiskController@tambah');
+Route::post('/harddisk/store','App\Http\Controllers\harddiskController@store');
+Route::get('/harddisk/edit/{id}', 'App\Http\Controllers\harddiskController@edit');
+Route::post('/harddisk/update','App\Http\Controllers\harddiskController@update');
+Route::get('/harddisk/hapus/{id}','App\Http\Controllers\harddiskController@hapus');
