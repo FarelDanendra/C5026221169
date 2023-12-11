@@ -1,0 +1,38 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f5f5f5;
+  }
+  .header {
+    padding: 50px;
+    text-align: center;
+  }
+  .container {
+    padding: 20px;
+
+  }
+  .logo {
+    text-align: right;
+    margin-left: 80%;
+    width: 10%;
+    height: 10%;
+  }
+  .gambar-bawah {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1; /* Set a negative z-index to send it to the background */
+    height: 100%;
+    width: 50%; /* Make it span the full width */
+  }
+  .main-title {
+    font-weight: 1000;
+    font-size: 60px;
+  }
+  .sub-title {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .sub-content {
+    font-size: 25px;
+  }

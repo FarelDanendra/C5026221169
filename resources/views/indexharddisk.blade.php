@@ -1,32 +1,24 @@
 @extends('master3')
-@section('judulhalaman','Data Harddisk')
+@section('judulhalaman','Data Pegawai')
 
 @section('konten')
-	<center> <h3>Harddisk</h3>
-    </center>
+	<h2>www.malasngoding.com</h2>
+	<h3>harddisk</h3>
+
 	<a href="/harddisk/tambah" class="btn btn-primary"> + Tambah Harddisk</a>
 
 
 	<table class="table table-striped table-hover">
 		<tr>
-			<th>Kode harddisk</th>
-            <th>Merk harddisk</th>
-			<th>Stock Harddisk</th>
-			<th>Tersedia</th>
-            <th>Opsi</th>
+			<th>merkharddisk</th>
+			<th>stockharddisk</th>
+			<th>tersedia</th>
 		</tr>
 		@foreach($harddisk as $hd)
 		<tr>
-			<td>{{ $hd->kodeharddisk }}</td>
-            <td>{{ $hd->merkharddisk }}</td>
+			<td>{{ $hd->merkharddisk }}</td>
 			<td>{{ $hd->stockharddisk }}</td>
 			<td>{{ $hd->tersedia }}</td>
-
-            <td>
-				<a href="/harddisk/edit/{{ $hd->kodeharddisk }}" class="btn btn-warning">Edit</a>
-				|
-				<a href="/harddisk/hapus/{{ $hd->kodeharddisk }}"class="btn btn-danger">Hapus</a>
-			</td>
 		</tr>
 		@endforeach
 	</table>

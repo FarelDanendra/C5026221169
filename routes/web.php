@@ -97,3 +97,10 @@ Route::post('/harddisk/store','App\Http\Controllers\harddiskController@store');
 Route::get('/harddisk/edit/{id}', 'App\Http\Controllers\harddiskController@edit');
 Route::post('/harddisk/update','App\Http\Controllers\harddiskController@update');
 Route::get('/harddisk/hapus/{id}','App\Http\Controllers\harddiskController@hapus');
+
+
+//Route CRUD Data Karyawan
+Route::get('/karyawan','App\Http\Controllers\KaryawanController@index');
+Route::get('/karyawan/tambah','App\Http\Controllers\KaryawanController@tambah');
+Route::post('/karyawan/store','App\Http\Controllers\KaryawanController@store');
+Route::get('/karyawan/hapus/{id}','App\Http\Controllers\KaryawanController@hapus');
